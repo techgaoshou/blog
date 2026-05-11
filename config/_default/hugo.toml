@@ -1,0 +1,18 @@
+baseURL                = "https://example.com/"
+title                  = "飞飞AI投资"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage         = true
+theme                  = "stack"
+
+enableRobotsTXT = true
+enableEmoji     = true
+
+[pagination]
+    pagerSize = 10
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
+
+[outputs]
+    home = ["HTML", "RSS"]

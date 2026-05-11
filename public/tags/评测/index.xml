@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>评测 on 飞飞AI投资</title>
+        <link>http://localhost:1313/tags/%E8%AF%84%E6%B5%8B/</link>
+        <description>Recent content in 评测 on 飞飞AI投资</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AF%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>GPT-4o vs Claude 3.5 vs Gemini：2025年大模型横评</title>
+            <link>http://localhost:1313/p/gpt-4o-vs-claude-3.5-vs-gemini2025%E5%B9%B4%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%A8%AA%E8%AF%84/</link>
+            <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/p/gpt-4o-vs-claude-3.5-vs-gemini2025%E5%B9%B4%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%A8%AA%E8%AF%84/</guid>
+            <description>&lt;h2 id=&#34;测试维度&#34;&gt;测试维度&#xA;&lt;/h2&gt;&lt;p&gt;本次横评从以下几个维度进行比较：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;代码生成&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;长文理解&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;中文能力&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;推理能力&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;成本效益&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;结论&#34;&gt;结论&#xA;&lt;/h2&gt;&lt;p&gt;没有完美的模型，只有最适合你场景的模型。根据使用频率和预算，灵活组合使用才是最优解。&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>
