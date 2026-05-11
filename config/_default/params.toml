@@ -6,7 +6,6 @@ favicon        = "img/avatar.png"
     since = 2025
 
 [sidebar]
-    emoji    = "🚀"
     subtitle = "AI · 投资 · 思考"
     avatar   = "img/avatar.png"
 
