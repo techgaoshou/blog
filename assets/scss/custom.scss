@@ -60,21 +60,6 @@
         height: 24px !important;
         stroke-width: 1.8;
     }
-
-    // 默认（浅色）显示"深色模式"，进入深色模式后切换为"浅色模式"
-    .label-to-light {
-        display: none;
-    }
-}
-
-[data-scheme="dark"] #dark-mode-toggle.dark-mode-top {
-    .label-to-dark {
-        display: none;
-    }
-
-    .label-to-light {
-        display: inline;
-    }
 }
 
 // ── 侧边栏文字加大加深加粗（浅色模式下也清晰） ────────────────
