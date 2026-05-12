@@ -179,7 +179,16 @@
 @media (max-width: 768px) {
     .theme-switcher {
         top: 12px;
-        right: 12px;
+        right: 64px; // 避开右上角的汉堡菜单按钮
+
+        &__trigger {
+            width: 36px;
+            height: 36px;
+        }
+
+        &__menu {
+            top: 44px;
+        }
     }
 }
 
