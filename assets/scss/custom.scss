@@ -19,6 +19,11 @@
     }
 }
 
+// ── 隐藏文章卡片上的分类标签 ───────────────────────────────
+.article-category {
+    display: none !important;
+}
+
 // ── 文章详情页：隐藏左侧栏，内容居中铺满 ─────────────────────
 body.article-page {
     .left-sidebar {
