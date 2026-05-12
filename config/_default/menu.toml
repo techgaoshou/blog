@@ -8,7 +8,7 @@
 
 [[main]]
     identifier = "overseas"
-    name       = "出海系列"
+    name       = "玩转海外"
     url        = "/categories/出海系列/"
     weight     = 2
     [main.params]
