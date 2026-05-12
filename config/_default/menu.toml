@@ -9,7 +9,7 @@
 [[main]]
     identifier = "overseas"
     name       = "玩转海外"
-    url        = "/categories/出海系列/"
+    url        = "/categories/玩转海外/"
     weight     = 2
     [main.params]
         icon = "language"
