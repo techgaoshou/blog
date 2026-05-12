@@ -1,10 +1,6 @@
 <footer class="site-footer site-footer--bottom">
     <section class="copyright">
-        &copy;
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} -
-        {{ end }}
-        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
+        &copy; 高手科技 techgaoshou. All Rights Reserved.
     </section>
 </footer>
 {{ partial "cookies/include.html" . }}
