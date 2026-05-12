@@ -15,38 +15,6 @@
         icon = "language"
 
 [[main]]
-    identifier = "ai"
-    name       = "AI 工具"
-    url        = "/categories/ai工具/"
-    weight     = 3
-    [main.params]
-        icon = "infinity"
-
-[[main]]
-    identifier = "stocks"
-    name       = "美股投资"
-    url        = "/categories/美股投资/"
-    weight     = 4
-    [main.params]
-        icon = "categories"
-
-[[main]]
-    identifier = "crypto"
-    name       = "加密货币"
-    url        = "/categories/加密货币/"
-    weight     = 5
-    [main.params]
-        icon = "hash"
-
-[[main]]
-    identifier = "search"
-    name       = "搜索"
-    url        = "/search/"
-    weight     = 6
-    [main.params]
-        icon = "search"
-
-[[main]]
     identifier = "about"
     name       = "关于"
     url        = "/about/"
