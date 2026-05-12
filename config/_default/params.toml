@@ -21,7 +21,8 @@ favicon        = "img/avatar.png"
 
 [widgets]
     homepage = []
-    page     = []
+    [[widgets.page]]
+        type = "toc"
 
 [colorScheme]
     toggle  = true

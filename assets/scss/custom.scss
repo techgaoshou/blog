@@ -51,18 +51,8 @@
     display: none !important;
 }
 
-// ── 文章详情页：隐藏左侧栏，内容居中铺满 ─────────────────────
-body.article-page {
-    .left-sidebar {
-        display: none !important;
-    }
-
-    .main-container {
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+// ── 文章详情页：保留左侧栏 + 正文 + 右侧目录三栏布局 ──────────
+// （已恢复主题默认三栏，无需特别覆盖）
 
 // ── 页面底部 footer（横跨整页） ─────────────────────────────
 .site-footer--bottom {
