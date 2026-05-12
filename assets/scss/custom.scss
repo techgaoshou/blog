@@ -19,6 +19,12 @@
     }
 }
 
+// ── 整个容器左对齐（左侧栏顶格） ────────────────────────────
+.container {
+    margin-left: 0 !important;
+    max-width: 1600px !important;
+}
+
 // ── 放大侧边栏头像 ─────────────────────────────────────────
 .sidebar {
     --sidebar-avatar-size: 160px !important;
