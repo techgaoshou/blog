@@ -16,13 +16,19 @@
         .article-details {
             flex: 1;
         }
+    }
+}
 
-        // 放大封面图
-        .article-image {
-            img {
-                height: 280px !important;
-            }
-        }
+// ── 放大侧边栏头像 ─────────────────────────────────────────
+.sidebar {
+    --sidebar-avatar-size: 160px !important;
+
+    @media (min-width: 1280px) {
+        --sidebar-avatar-size: 180px !important;
+    }
+
+    @media (max-width: 768px) {
+        --sidebar-avatar-size: 120px !important;
     }
 }
 
