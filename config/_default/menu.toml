@@ -12,7 +12,7 @@
     url        = "/categories/玩转海外/"
     weight     = 2
     [main.params]
-        icon = "language"
+        icon = "plane"
 
 [[main]]
     identifier = "about"
