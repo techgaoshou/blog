@@ -44,6 +44,24 @@
     }
 }
 
+// ── 主题切换项放到菜单顶部，样式与其它菜单项一致 ─────────────
+#main-menu li#dark-mode-toggle.dark-mode-top {
+    display: flex;
+    align-items: center;
+    gap: var(--menu-icon-separation);
+    padding: 0;
+    cursor: pointer;
+    color: var(--body-text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    svg {
+        width: 24px !important;
+        height: 24px !important;
+        stroke-width: 1.8;
+    }
+}
+
 // ── 侧边栏文字加大加深加粗（浅色模式下也清晰） ────────────────
 // 注：Stack 主题 1rem = 10px（html font-size 62.5%）
 .left-sidebar {
