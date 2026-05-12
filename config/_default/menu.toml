@@ -1,6 +1,6 @@
 [[main]]
     identifier = "home"
-    name       = "首页"
+    name       = "网站首页"
     url        = "/"
     weight     = 1
     [main.params]
@@ -16,7 +16,7 @@
 
 [[main]]
     identifier = "about"
-    name       = "关于"
+    name       = "关于作者"
     url        = "/about/"
     weight     = 7
     [main.params]
