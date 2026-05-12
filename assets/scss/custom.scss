@@ -62,6 +62,20 @@
     display: none !important;
 }
 
+// ── 缩窄左侧栏宽度 + 减小与正文的间距 ─────────────────────────
+@media (min-width: 769px) {
+    .container.main-container {
+        --left-sidebar-max-width: 220px;
+        --section-separation: 20px;
+        gap: 20px;
+    }
+
+    .container.compact,
+    .container.extended {
+        --left-sidebar-max-width: 220px !important;
+    }
+}
+
 // ── 文章详情页：去掉右侧目录，正文占满剩余空间 ────────────────
 
 // ── 页面底部 footer（横跨整页） ─────────────────────────────
