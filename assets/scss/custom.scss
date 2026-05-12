@@ -45,27 +45,28 @@
 }
 
 // ── 侧边栏文字加大加深加粗（浅色模式下也清晰） ────────────────
+// 注：Stack 主题 1rem = 10px（html font-size 62.5%）
 .left-sidebar {
     .site-name a {
         font-weight: 700;
     }
 
     .site-description {
-        font-size: 1.05rem !important;
+        font-size: 1.6rem !important;
         font-weight: 500;
         opacity: 1 !important;
         color: var(--body-text-color);
     }
 
-    #main-menu li a {
-        font-size: 1.05rem;
+    #main-menu > li > a {
+        font-size: 1.7rem !important;
         font-weight: 600;
         color: var(--body-text-color);
     }
 
     #main-menu li svg {
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
         stroke-width: 1.8;
     }
 }
