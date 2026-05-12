@@ -1,13 +1,12 @@
 ---
-title: GPT-4o vs Claude 3.5 vs Gemini：2025年大模型横评
+title: GPT-4o vs Claude vs Gemini：2025年大模型横评
 date: 2025-04-10
 description: 从实际使用场景出发，比较当前三款主流大模型的优劣势。
 tags:
-  - AI
   - 大模型
   - 评测
 categories:
-  - AI技术
+  - AI工具
 ---
 
 ## 测试维度

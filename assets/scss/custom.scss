@@ -1,0 +1,132 @@
+// ── Hero Section ──────────────────────────────────────────
+.home-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: var(--card-border-radius);
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    [data-scheme="light"] & {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+}
+
+.home-hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 12px;
+    letter-spacing: -0.5px;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+.home-hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 28px;
+}
+
+.home-hero-btn {
+    display: inline-block;
+    background: #e94560;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover {
+        background: #c73652;
+        color: #fff;
+    }
+}
+
+// ── Section ────────────────────────────────────────────────
+.home-section {
+    margin-bottom: 40px;
+}
+
+.home-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--card-text-color-main);
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--card-separator-color);
+}
+
+// ── Category Cards ─────────────────────────────────────────
+.home-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-cat-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--card-background);
+    border-radius: var(--card-border-radius);
+    padding: 22px 20px;
+    text-decoration: none;
+    border: 1px solid var(--card-separator-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        text-decoration: none;
+
+        [data-scheme="dark"] & {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.home-cat-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.home-cat-body {
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--card-text-color-main);
+        margin: 0 0 6px;
+    }
+
+    p {
+        font-size: 0.85rem;
+        color: var(--card-text-color-secondary);
+        margin: 0;
+        line-height: 1.5;
+    }
+}
+
+// ── More Link ──────────────────────────────────────────────
+.home-more-link {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        font-size: 0.9rem;
+        color: var(--accent-color);
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

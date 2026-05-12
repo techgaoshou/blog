@@ -1,5 +1,5 @@
-baseURL                = "https://ffainv.com/"
-title                  = "飞飞AI投资"
+baseURL                = "https://techgaoshou.com/"
+title                  = "高手科技"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage         = true
 theme                  = "stack"
