@@ -62,35 +62,7 @@
     display: none !important;
 }
 
-// ── 文章详情页：缩窄右侧目录，给正文更多空间 ─────────────────
-.container.extended {
-    --right-sidebar-max-width: 200px;
-
-    @media (min-width: 1280px) {
-        --right-sidebar-max-width: 220px;
-    }
-
-    @media (min-width: 1536px) {
-        --right-sidebar-max-width: 240px;
-    }
-}
-
-.right-sidebar {
-    font-size: 0.85rem;
-
-    .widget--toc {
-        padding: 16px;
-
-        .widget-title {
-            font-size: 0.95rem;
-        }
-
-        .widget__content {
-            font-size: 0.8rem;
-            line-height: 1.5;
-        }
-    }
-}
+// ── 文章详情页：去掉右侧目录，正文占满剩余空间 ────────────────
 
 // ── 页面底部 footer（横跨整页） ─────────────────────────────
 .site-footer--bottom {
