@@ -1,14 +1,3 @@
-<div class="theme-switcher" id="theme-switcher">
-    <button type="button" class="theme-switcher__trigger" aria-label="切换主题">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
-    </button>
-    <ul class="theme-switcher__menu" hidden>
-        <li><button type="button" data-scheme="light">☀️ 亮色</button></li>
-        <li><button type="button" data-scheme="dark">🌙 暗色</button></li>
-        <li><button type="button" data-scheme="auto">🖥 跟随系统</button></li>
-    </ul>
-</div>
-
 <footer class="site-footer site-footer--bottom">
     <section class="copyright">
         &copy; 高手科技@techgaoshou. All Rights Reserved.
@@ -17,48 +6,3 @@
 {{ partial "cookies/include.html" . }}
 {{ partialCached "footer/components/script.html" . }}
 {{ partial "footer/custom.html" . }}
-
-<script>
-(function () {
-    const KEY = 'StackColorScheme';
-    const root = document.documentElement;
-    const wrap = document.getElementById('theme-switcher');
-    if (!wrap) return;
-    const trigger = wrap.querySelector('.theme-switcher__trigger');
-    const menu = wrap.querySelector('.theme-switcher__menu');
-    const buttons = menu.querySelectorAll('button[data-scheme]');
-
-    function systemDark() {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-
-    function apply(scheme) {
-        if (scheme === 'auto') {
-            root.dataset.scheme = systemDark() ? 'dark' : 'light';
-        } else {
-            root.dataset.scheme = scheme;
-        }
-        localStorage.setItem(KEY, scheme);
-        buttons.forEach(b => b.classList.toggle('is-active', b.dataset.scheme === scheme));
-    }
-
-    const saved = localStorage.getItem(KEY) || 'auto';
-    apply(saved);
-
-    trigger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        menu.hidden = !menu.hidden;
-    });
-    buttons.forEach(b => b.addEventListener('click', () => {
-        apply(b.dataset.scheme);
-        menu.hidden = true;
-    }));
-    document.addEventListener('click', (e) => {
-        if (!wrap.contains(e.target)) menu.hidden = true;
-    });
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        if ((localStorage.getItem(KEY) || 'auto') === 'auto') apply('auto');
-    });
-})();
-</script>
