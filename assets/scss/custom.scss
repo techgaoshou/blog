@@ -10,13 +10,24 @@
 
     article {
         margin: 0 !important;
-
-        // 让每张卡片高度一致，内容顶对齐
         display: flex;
         flex-direction: column;
 
         .article-details {
             flex: 1;
         }
+    }
+}
+
+// ── 文章详情页：隐藏左侧栏，内容居中铺满 ─────────────────────
+body.article-page {
+    .left-sidebar {
+        display: none !important;
+    }
+
+    .main-container {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
