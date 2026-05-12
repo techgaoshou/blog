@@ -179,9 +179,7 @@
 @media (max-width: 768px) {
     .theme-switcher {
         top: 12px;
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
+        right: 12px;
 
         &__trigger {
             width: 36px;
@@ -190,10 +188,13 @@
 
         &__menu {
             top: 44px;
-            left: 50%;
-            right: auto;
-            transform: translateX(-50%);
         }
+    }
+
+    // 手机端汉堡菜单按钮移到左侧，避免和右上角主题切换重叠
+    #toggle-menu {
+        right: auto !important;
+        left: 0 !important;
     }
 }
 
