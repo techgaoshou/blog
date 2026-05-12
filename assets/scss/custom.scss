@@ -16,6 +16,13 @@
         .article-details {
             flex: 1;
         }
+
+        // 放大封面图
+        .article-image {
+            img {
+                height: 280px !important;
+            }
+        }
     }
 }
 
