@@ -33,6 +33,17 @@
     }
 }
 
+// ── 左侧栏滚动时固定（桌面端） ──────────────────────────────
+@media (min-width: 769px) {
+    .left-sidebar {
+        position: sticky !important;
+        top: 0 !important;
+        align-self: flex-start !important;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
+
 // ── 放大侧边栏头像 ─────────────────────────────────────────
 .sidebar {
     --sidebar-avatar-size: 160px !important;
