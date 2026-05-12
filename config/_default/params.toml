@@ -1,13 +1,13 @@
 mainSections   = ["post"]
 rssFullContent = true
-favicon        = "img/avatar.png"
+favicon        = "/img/avatar.png"
 
 [footer]
     since = 2025
 
 [sidebar]
     subtitle = "出海 · AI · 美股 · 加密货币"
-    avatar   = "img/avatar.png"
+    avatar   = "/img/avatar.png"
 
 [article]
     math            = false
