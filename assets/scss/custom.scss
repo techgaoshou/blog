@@ -19,10 +19,18 @@
     }
 }
 
-// ── 整个容器左对齐（左侧栏顶格） ────────────────────────────
+// ── 容器两侧留约 10% 空白（桌面），手机端保持紧凑 ────────────
 .container {
-    margin-left: 0 !important;
-    max-width: 1600px !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    @media (max-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 // ── 放大侧边栏头像 ─────────────────────────────────────────
