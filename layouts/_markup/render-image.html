@@ -1,0 +1,52 @@
+{{- $image := partial "helper/image" (dict "Resources" .Page.Resources "Image" .Destination "Context" .Page) -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $title := .Title | markdownify -}}
+
+{{- $resource := $image.Resource -}}
+{{- $permalink := $image.Permalink -}}
+{{- $width := $image.Width -}}
+{{- $height := $image.Height -}}
+
+{{/* 给可处理的位图加水印（GIF/SVG 等跳过） */}}
+{{- if and $resource (reflect.IsImageResourceProcessable $resource) -}}
+    {{- $size := 18 -}}
+    {{- if gt $resource.Width 1600 -}}{{- $size = 28 -}}
+    {{- else if gt $resource.Width 1000 -}}{{- $size = 22 -}}
+    {{- end -}}
+    {{- $textWidthEstimate := mul $size 7 -}}
+    {{- $x := sub $resource.Width (add $textWidthEstimate 16) -}}
+    {{- $y := sub $resource.Height (add $size 14) -}}
+    {{- $filter := images.Text "@techgaoshou" (dict "color" "#ffffffb3" "size" $size "x" $x "y" $y) -}}
+    {{- $resource = $resource | images.Filter $filter -}}
+    {{- $permalink = $resource.RelPermalink -}}
+    {{- $width = $resource.Width -}}
+    {{- $height = $resource.Height -}}
+{{- end -}}
+
+{{- $galleryImage := and $height $width -}}
+
+{{- $attributes := dict -}}
+{{- if $galleryImage -}}
+    {{- $attributes = (dict
+        "data-flex-grow" (div (mul $width 100) $height)
+        "data-flex-basis" (printf "%dpx" (div (mul $width 240) $height))
+    ) -}}
+{{- end -}}
+
+{{ partial "helper/responsive-image" (dict
+    "Resource" $resource
+    "Widths" (cond .Page.Site.Params.ImageProcessing.Content.Enabled .Page.Site.Params.ImageProcessing.Content.Widths nil)
+    "Attributes" (merge $attributes (dict
+        "src" $permalink
+        "width" $width
+        "height" $height
+        "alt" $alt
+        "title" $title
+        "data-title-escaped" ($title | htmlEscape)
+        "class" (cond $galleryImage "gallery-image" "")
+        "loading" "lazy"
+        "sizes" "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px"
+        "oncontextmenu" "return false;"
+        "ondragstart" "return false;"
+    ))
+) }}

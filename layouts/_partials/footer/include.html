@@ -6,3 +6,19 @@
 {{ partial "cookies/include.html" . }}
 {{ partialCached "footer/components/script.html" . }}
 {{ partial "footer/custom.html" . }}
+
+<script>
+// 复制正文超过 30 字时，自动追加原文出处
+document.addEventListener('copy', function (e) {
+    const selection = window.getSelection();
+    const text = selection ? selection.toString() : '';
+    if (!text || text.length < 30) return;
+
+    const article = e.target && e.target.closest && e.target.closest('article, .article-content, main');
+    if (!article) return;
+
+    const attribution = '\n\n———\n来源：高手科技@techgaoshou\n原文：' + window.location.href;
+    e.clipboardData.setData('text/plain', text + attribution);
+    e.preventDefault();
+});
+</script>
